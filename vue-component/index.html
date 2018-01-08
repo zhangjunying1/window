@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://hinesboy.github.io/mavonEditor/dist/markdown/github-markdown.min.css">
+    <script src="vue.js"></script>
+    <script src="vue-router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tween.js@16.3.4"></script>
+</head>
+<body>
+<div id="root">
+    <nav>
+        <router-link to="/">首页</router-link>
+        <router-link to="/quick">快速入手</router-link>
+    </nav>
+    <transition mode="out-in">
+        <router-view></router-view>
+    </transition>
+</div>
+</body>
+</html>
+<script src="compontents.js"></script>
+<script src="index.js"></script>
